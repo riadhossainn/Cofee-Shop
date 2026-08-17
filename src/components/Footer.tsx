@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react";
 import { ArrowRightIcon, BeanIcon, CheckIcon, SteamCup } from "./Icons";
 import { Reveal } from "./Reveal";
+import SourceDownload from "./SourceDownload";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -112,8 +113,9 @@ export default function Footer() {
       </div>
 
       <div className="relative border-t border-seam/70">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[0.74rem] text-chaff font-bold">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-[0.74rem] text-chaff font-bold">
           <p>© 2026 Emberline Roasting Co. All beans reserved.</p>
+          <SourceDownload />
           <p className="flex items-center gap-2">
             <BeanIcon className="w-3.5 h-3.5 text-ember" />
             Made with patience, and slightly too much caffeine.
